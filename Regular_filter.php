@@ -1,3 +1,4 @@
+<?
 //Filter from form input 
 public function filter($string) {
 	$escape = array('\'', '\\\\');
@@ -12,3 +13,4 @@ public function filter($string) {
 //Regular expression
 if(preg_match('/[^a-zA-Z0-9_]/', $_POST['nickname']) || strlen($_POST['nickname']) > 10)
 	die('Invalid nickname');
+?>
